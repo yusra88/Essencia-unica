@@ -1,5 +1,3 @@
-
-
 //carousel imagen quien somos
 const images = [
   "imagenes/sectionabout.jpg",
@@ -33,10 +31,10 @@ btnProbar.addEventListener('click', () => {
   window.location.href = '../html/formulario/formulario.html';
 });
 
-//modal desceunto
+// //modal desceunto
 window.addEventListener('load', function() {
-  var modalContainer = document.querySelector('.modal-container');
-  var closeButton = document.querySelector('.close-modal');
+  let modalContainer = document.querySelector('.modal-container');
+  let closeButton = document.querySelector('.close-modal');
 
   function closeModal() {
     modalContainer.style.display = 'none';
@@ -51,7 +49,9 @@ window.addEventListener('load', function() {
   closeButton.addEventListener('click', closeModal);
 
   modalContainer.style.display = 'flex';
+  
 });
+
 
 
 //desceunto

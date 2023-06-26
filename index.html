@@ -11,25 +11,32 @@
 
 <body>
   <div class="contenedor">
-    <header class="bg-header">
+   <header class="bg-header">
       <nav class="navegador">
-        <div class="logo">
-          <img src="imagenes/logonov.png" alt="Logo" class="brand" />
-        </div>
-        <ul class="nav-link">
-          <li><a href="#">QUIÉNES SOMOS</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="search">
-          <input type="text" placeholder="Recherche..." />
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </div>
-        <div class="cart">
-          <a href="/html/login.html"><i class="fa-regular fa-user" style="color: #ffffff;"></i></a>
-          <a href="#"><i class="fa fa-shopping-cart" style="color: #ffffff;"></i></a>
-        </div>
+         <div class="logo">
+            <img src="imagenes/logonov.png" alt="Logo" class="brand" />
+          </div>
+          <a href="" id="abrir" class="abrir-menu"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></a> 
+          <div class="menu" id="menu">
+              <button id="cerrar" class="cerrar-menu">cerrar</button>
+              <ul class="nav-link">
+                <li><a href="#">QUIÉNES SOMOS</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+                <div class="search">
+                  <input type="text" placeholder="Recherche..." />
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+          </div>
+          
+          <div class="user-carito">
+            <a href="/html/login.html"><i class="fa-regular fa-user" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa fa-shopping-cart" style="color: #ffffff;"></i></a>
+          </div>
+        
       </nav>
+      
     </header>
 
     <div class="container">
@@ -37,13 +44,13 @@
         <div class="modal">
           <h2>oferta de hoy</h2>
           <span class="close-modal">&times;</span>
-            <img src="imagenes/imgmodal.png" alt="oferta de    hoy" id="imgmodal">
+            <img src="imagenes/imgmodal.png" alt="oferta de hoy" id="imgmodal">
                <h3>organic strawberries</h3>
                <div class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
                   <i class="fas fa-star-half-alt"></i>
                   <span>( 250 )</span>
                </div>
@@ -194,8 +201,9 @@
     </footer>
     
   </div>
-
+   
   <script src="/js/main.js"></script>
+  <script src="/js/responsive.js"></script>
 </body>
 
 </html>
