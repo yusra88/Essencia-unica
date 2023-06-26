@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/formulario.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <title>Essencia unica</title>
+      </head>
+      <body>
+        <header class="bg-header">
+          <nav class="navegador">
+            <div class="logo">
+              <img src="/imagenes/logonav.png" alt="Logo" class="brand" />
+            </div>
+            <ul class="nav-link">
+              <li><a href="#">QUIEN SOMOS</a></li>
+              <li><a href="#">Productos</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="search">
+              <input type="text" placeholder="Recherche..." />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="cart">
+              <a href="#"><i class="fa-regular fa-user" style="color: #ffffff;"></i></a>
+              <a href="#"><i class="fa fa-shopping-cart" style="color: #ffffff;"></i></a>
+              </div>
+          </nav>
+        </header>
+<body>
+    <section class="formulario">
+      <div class="close">
+        <button class="btn-close"><i class="fa-solid fa-xmark" style="color: #0d0d0d;"></i></button>
+      </div>
+        <h2>Encuesta de perfume</h2>
+       <form action="traitemetform.html" method="POST">
+          <div class="form-group">
+             <label for="genero">1. ¿Cuál es tu género?</label>
+            <select id="genero" name="genero" required>
+              <option value="">Selecciona una opción</option>
+              <option value="hombre">Hombre</option>
+              <option value="mujer">Mujer</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="edad">2. ¿Cuál es tu edad?</label>
+            <select id="edad" name="edad" required>
+              <option value="">Selecciona una opción</option>
+              <option value="menos18">Menos de 18 años</option>
+              <option value="18-24">18-24 años</option>
+              <option value="25-34">25-34 años</option>
+              <option value="35-44">35-44 años</option>
+              <option value="45-54">45-54 años</option>
+              <option value="mas55">Más de 55 años</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="tono-piel">3. ¿Cuál es el tono de tu piel?</label>
+            <select id="tono-piel" name="tono-piel" required>
+              <option value="">Selecciona una opción</option>
+              <option value="claro">Claro</option>
+              <option value="medio">Medio</option>
+              <option value="oscuro">Oscuro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="tipo-sangre">4. ¿Cuál es tu tipo de sangre?</label>
+            <select id="tipo-sangre" name="tipo-sangre" required>
+              <option value="">Selecciona una opción</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="AB">AB</option>
+              <option value="O">O</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fragancias">5. ¿Qué tipo de fragancias te gustan más?</label>
+            <select id="fragancias" name="fragancias[]" required>
+              <option value="frescas-citricas">Frescas y cítricas</option>
+              <option value="florales-femeninas">Florales y femeninas</option>
+              <option value="amaderadas-masculinas">Amaderadas y masculinas</option>
+              <option value="dulces-afrutadas">Dulces y afrutadas</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="intensidad">6. ¿Prefieres un perfume suave o fuerte?</label>
+            <select id="intensidad" name="intensidad" required>
+              <option value="">Selecciona una opción</option>
+              <option value="suave">Suave</option>
+              <option value="moderado">Moderado</option>
+              <option value="fuerte">Fuerte</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="colores">7. ¿Qué colores te gustan más?</label>
+            <select id="colores" name="colores[]"  required>
+              <option value="blanco">Blanco</option>
+              <option value="azul">Azul</option>
+              <option value="verde">Verde</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          
+            </div>
+          </form>
+          <div class="next-formu">
+          <button class="btn btn-next">NEXT</button>
+          <button class="btn btn-enviar" >Enviar</button></div>
+          <script src="/js/formulario.js"></script>
+</body>
+</html>
