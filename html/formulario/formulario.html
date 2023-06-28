@@ -9,33 +9,29 @@
         <title>Essencia unica</title>
       </head>
       <body>
-        <header class="bg-header">
-          <section class="navegador">
-              <div class="logo">
-                <img src="imagenes/logonov.png" alt="Logo" class="brand" />
-              </div>
-            
+    <header class="bg-header">
+      <section class="navegador">
+          <div class="logo">
+            <img src="/imagenes/logonov.png" alt="Logo" class="brand" />
+          </div>
               <a href="" id="abrir" class="abrir-menu"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></a> 
-            
               <div class="menu" id="menu">
                   <button id="cerrar" class="cerrar-menu" >&times;</button>
-                  <ul class="nav-link">
-                    <li><a href="#section-two">QUIENES SOMOS</a></li>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#btn-newsletter">Contact</a></li>
-                  </ul>
-                 
-              </div>
-
+                    <ul class="nav-link">
+                      <li><a href="#section-two">QUIENES SOMOS</a></li>
+                      <li><a href="#productos">Productos</a></li>
+                      <li><a href="#btn-newsletter">Contact</a></li>
+                    </ul>
+                </div>
               <div class="user-carito">
-                <a href="/html/login.html"><i class="fa-regular fa-user" style="color: #ffffff;"></i></a>
-                <a href="#"><i class="fa fa-shopping-cart" style="color: #ffffff;"></i></a>  
+                  <a href="/html/login.html"><i class="fa-regular fa-user" style="color: #ffffff;"></i></a>
+                  <a href="#"><i class="fa fa-shopping-cart" style="color: #ffffff;"></i></a>  
               </div>
-            
-          </section>
+              
+      </section>
       
     </header>
-<body>
+
     <section class="formulario">
       <div class="close">
         <button class="btn-close"><i class="fa-solid fa-xmark" style="color: #0d0d0d;"></i></button>
@@ -84,7 +80,7 @@
           </div>
           <div class="form-group">
             <label for="fragancias">5. ¿Qué tipo de fragancias te gustan más?</label>
-            <select id="fragancias" name="fragancias[]" required>
+            <select id="fragancias" name="fragancias" >
               <option value="frescas-citricas">Frescas y cítricas</option>
               <option value="florales-femeninas">Florales y femeninas</option>
               <option value="amaderadas-masculinas">Amaderadas y masculinas</option>
@@ -102,19 +98,24 @@
           </div>
           <div class="form-group">
             <label for="colores">7. ¿Qué colores te gustan más?</label>
-            <select id="colores" name="colores[]"  required>
+            <select id="colores" name="colores" >
               <option value="blanco">Blanco</option>
               <option value="azul">Azul</option>
               <option value="verde">Verde</option>
               <option value="otro">Otro</option>
             </select>
           </div>
-          
-            </div>
           </form>
-          <div class="next-formu">
+        <div class="next-formu">
           <button class="btn btn-next">NEXT</button>
-          <button class="btn btn-enviar" >Enviar</button></div>
+          <button class="btn btn-enviar" >Enviar</button>
+        
+        </div>
+      
+      
           <script src="/js/formulario.js"></script>
-</body>
+          <script src="/js/responsive.js"></script>
+          
+    </section>
+    </body>
 </html>

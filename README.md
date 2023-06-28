@@ -1,6 +1,6 @@
 # Essencia Única
 
-Essencia Única es una página web que permite a los usuarios encontrar un perfume personalizado respondiendo a un formulario de prueba. El formulario consta de 7 preguntas que permiten determinar la personalidad, los gustos, los colores favoritos y el tipo de piel del usuario.
+Essencia Única es una página web que permite a los usuarios encontrar un perfume personalizado respondiendo a un formulario de prueba. El formulario consta de 7 preguntas que permiten determinar la personalidad, los gustos, los colores favoritos y el tipo de piel del usuario...para crear un perfume único que refleje tu personalidad.
 
 ## Funcionalidades
 
@@ -22,7 +22,7 @@ Essencia Única es una página web que permite a los usuarios encontrar un perfu
 ## Autor
 
 - [yusra rhazouali]
+-(https://github.com/Yusra88)
+-contact:6485.1703
+-email:yousra.rhazouali88@gmail.com
 
-## Licencia
-
-Este proyecto está bajo la licencia [nombre de la licencia]. Ver el archivo LICENSE.md para más información.
