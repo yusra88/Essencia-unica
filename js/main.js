@@ -31,26 +31,26 @@ btnProbar.addEventListener('click', () => {
   window.location.href = '../html/formulario/formulario.html';
 });
 
+
 // //modal desceunto
+
 window.addEventListener('load', function() {
+  
   let modalContainer = document.querySelector('.modal-container');
   let closeButton = document.querySelector('.close-modal');
 
   function closeModal() {
     modalContainer.style.display = 'none';
+    
   }
-
-  modalContainer.addEventListener('click', function(eo) {
-    if (eo.target === modalContainer) {
-      closeModal();
-    }
-  });
 
   closeButton.addEventListener('click', closeModal);
 
   modalContainer.style.display = 'flex';
-  
+ 
+
 });
+
 
 
 
@@ -154,6 +154,5 @@ const products = [
     
     productsSection.appendChild(productDiv);
   });
-  
-  
+ 
   

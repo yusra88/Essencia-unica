@@ -1,3 +1,16 @@
+//fecha 
+function afficherDate() {
+    let maintenant = new Date();
+    let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    let fecha = maintenant.toLocaleDateString('es-ES', options);
+    let hora = maintenant.toLocaleTimeString();
+    document.getElementById("date").innerHTML = "Estamos en " + fecha + " y es " + hora;
+  }
+  // Appel de la fonction toutes les secondes
+  setInterval(afficherDate, 1000);
+
+
+
 const container = document.querySelector(".container"),
       pwShowHide = document.querySelectorAll(".showHidePw"),
       pwFields = document.querySelectorAll(".password"),
@@ -37,7 +50,8 @@ const container = document.querySelector(".container"),
     let usuarios = [{ correo: "yousra.rhazouali@estudioenpenascal.com", contrasena: 1234567, nombre: "yousra rhazouali"},
     { correo: "sara.rhazouali@estudioenpenascal.com", contrasena: "sara123", nombre: "sara rhazouali"}];
     const loginButton = document.querySelector('.login-btn');
-    const signUpButton =document.querySelector('.signup-btn')
+    const signUpButton =document.querySelector('.signup-btn');
+    const checkBox = document.querySelector('#termCon');
     // let correos =document.querySelector('.correo').value;
     // let password = document.querySelector('.password').value;
 
@@ -62,27 +76,28 @@ const container = document.querySelector(".container"),
   }
 }
 //registrar 
-signUpButton.addEventListener('click', registrar)
-function registrar() {
-    let nombre = document.querySelector('.nombre').value;
-    let correo = document.querySelector('.correo').value;
-    let contrasena = document.querySelector('.password').value;
+ signUpButton.addEventListener('click', registrar)
+ function registrar() {
+       if (checkBox.checked) {
+     let nombre = document.querySelector('.nombre').value;
+     let correo = document.querySelector('.correo').value;
+     let contrasena = document.querySelector('.password').value;
+       
     
     if(nombre && correo && contrasena) {
-      let usuario = {nombre, correo, contrasena};
-      // Stocker les données de l'utilisateur dans le local storage
-      localStorage.setItem('usuario', JSON.stringify(usuario)); 
-       // Ajouter les nouvelles données utilisateur à la liste 'usuarios'
-      usuarios.push(usuario);
-      // Activer l'élément de connexion
-      document.querySelector('.container').classList.remove('active');
+       let usuario = {nombre, correo, contrasena};
+//       // Stocker les données de l'utilisateur dans le local storage
+       localStorage.setItem('usuario', JSON.stringify(usuario)); 
+//        // Ajouter les nouvelles données utilisateur à la liste 'usuarios'
+     usuarios.push(usuario);
+//       // Activer l'élément de connexion
+    document.querySelector('.container').classList.remove('active');
       
-      // Effacer les valeurs des champs de saisie
-    //   document.querySelector('.nombre').value = '';
-    //   document.querySelector('.correo').value = '';
-    //   document.querySelector('.password').value = '';
     } else {
       alert("Veuillez remplir tous les champs.");
-    }
-  }
-  
+     }
+  } else {
+    alert("Veuillez accepter les termes et conditions pour vous inscrire.");
+}
+};
+

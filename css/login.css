@@ -14,8 +14,14 @@ body{
     justify-content: center;
     background-color: black;
 }
+.contenedor{
+    max-width: min(90%, 1600px);
+    margin: auto;
+    
+}
 
 .container{
+    
     position: relative;
     max-width: 430px;
     width: 100%;
@@ -25,6 +31,15 @@ body{
     overflow: hidden;
     margin: 0 20px;
 }
+#date {
+    
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    margin: 2%;
+  }
 
 .container .forms{
     display: flex;
