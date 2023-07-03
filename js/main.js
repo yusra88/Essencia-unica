@@ -1,3 +1,43 @@
+//change mode 
+// Sélectionne le bouton "Mode light"
+const lightButton = document.getElementById('light');
+
+
+let theme = 'sombre';
+
+lightButton.addEventListener('click', function() {
+  
+  const body = document.body;
+  const contenedor = document.querySelector('.contenedor');
+  
+  if (theme === 'sombre') {
+    body.style.backgroundColor = '#fff';
+    contenedor.style.backgroundColor = '#fff';
+    theme = 'clair';
+  } else {
+    
+    body.style.backgroundColor = '#000';
+    contenedor.style.backgroundColor = '#000';
+    theme = 'sombre';
+  }
+  
+
+  const paragraphs = document.querySelectorAll('.section-two-text p, .section-three-text p, .cualidade-content p, .nav-link a, .fa,.btn-probar');
+
+ 
+  paragraphs.forEach(paragraph => {
+    if (theme === 'sombre') {
+      paragraph.style.color = '#fff';
+    } else {
+    
+      paragraph.style.color = '#000';
+    }
+  });
+});
+
+
+
+
 //carousel imagen quien somos
 const images = [
   "imagenes/sectionabout.jpg",
